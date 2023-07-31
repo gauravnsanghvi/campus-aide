@@ -1,0 +1,41 @@
+ion-content {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+ion-list {
+  padding: auto;
+}
+
+ion-item {
+  display: flex;
+  align-items: center;
+  padding: 55px;
+}
+
+ion-icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+ion-label {
+  font-weight: bold;
+}
+
+/* Style for ion-item on hover */
+ion-item:hover {
+  background-color: rgb(61, 60, 60);
+  cursor: pointer;
+}
+
+/* Style for ion-item content */
+ion-item ion-label,
+ion-item ion-icon {
+  transition: color 0.3s;
+}
+
+/* Style for ion-item on hover - label and icon */
+ion-item:hover ion-label,
+ion-item:hover ion-icon {
+  color: #fff;
+}
