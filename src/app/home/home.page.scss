@@ -1,27 +1,63 @@
+$primary:#49d99c; 
+
 #container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.login-card {
+  width: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
-#container a {
-  text-decoration: none;
+ion-item {
+  margin-bottom: 16px;
 }
+
+ion-input {
+  --placeholder-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+
+}
+
+ion-button {
+  --background: #49d99c;
+  --color: #131313;
+  --ion-color-base: #49d99cS;
+  --ion-color-base-rgb: 0, 123, 255;
+  border-radius: 14px;
+  padding: 8px 52px;
+  font-size: 14 px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+ion-checkbox {
+  --size: 12px;
+  --checkbox-background-checked: black;  
+}
+
+ion-checkbox::part(container) {
+  border-radius: 3px;
+  border: 2px solid #49d99c;
+}
+
